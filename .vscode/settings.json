@@ -1,0 +1,24 @@
+{
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": [
+      // https://github.com/microsoft/vscode/pull/92681
+      // because we want prettier to "win" on any formatting, so it needs to be last
+      //"source.organizeImports", <-- disabled for now because we have import rules in prettier/eslint for certain apps and we don't want to impose it on all apps
+      "source.fixAll.eslint"
+    ],
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+     "*.css": "tailwindcss"
+  }
+  }
+  
