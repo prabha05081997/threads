@@ -141,7 +141,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
               <FormControl className="flex-1 text-base-semibold text-gray-200">
                 <Input
                   type="file"
-                  accept="image/*"
+                  accept=".png, .jpg, .jpeg .webp"
                   placeholder="Upload a photo"
                   className="account-form_image-input"
                   onChange={(e) => handleImage(e, field.onChange)}
